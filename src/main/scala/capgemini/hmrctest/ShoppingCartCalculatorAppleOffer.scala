@@ -4,7 +4,7 @@ class ShoppingCartCalculatorAppleOffer extends ShoppingCartCalculator {
 
   @Override
   def calculateTotalCost(totalApples : Long): Double = {
-    ((totalApples/2) * FruitEnum.APPLE.getCost() ) + (totalApples % 2 * FruitEnum.APPLE.getCost() )
+    ((totalApples/2) * FruitEnum.APPLE.getCost().doubleValue() ) + (totalApples % 2 * FruitEnum.APPLE.getCost().doubleValue() )
   }
 
   @Override
@@ -13,3 +13,4 @@ class ShoppingCartCalculatorAppleOffer extends ShoppingCartCalculator {
   }
 
 }
+
